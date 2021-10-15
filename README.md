@@ -138,7 +138,7 @@ PUT /api/1/delete-many/:ids?token=seu_token
 ```
 
 ### Diretrizes
-- Seguir as [instruções de desenvolvimento](https://github.com/eadplataforma/desafio/blob/master/layouts/instrucoes.txt);
+- Seguir as [instruções de desenvolvimento](https://github.com/eadplataforma/desafio-front/blob/master/layouts/instrucoes.txt);
 
 - Utilize [ReactJS](https://reactjs.org/) como Framework JavaScript;
 

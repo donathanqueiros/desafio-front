@@ -1,3 +1,5 @@
+Importante: Solicite sua chave de API no e-mail suporte@eadplataforma.com
+
 ## Geral
 	1. Topo: Deverá trazer a foto de perfil de um usuário do endpoint GET /api/1/profile/:id
 	2. Busca: Deverá ser capaz de pesquisar por nome ou e-mail os registros através do endpoint GET /api/1/users

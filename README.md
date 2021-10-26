@@ -106,7 +106,7 @@ GET /api/1/users?offset=10&token=seu_token = Indica o início da leitura à part
 
 ### Edição do usuário
 ```
-PUT /api/1/update/:id?token=seu_token
+POST /api/1/update/:id?token=seu_token
 ```
 ```json
 {
@@ -119,7 +119,7 @@ PUT /api/1/update/:id?token=seu_token
 
 ### Apagar um usuário
 ```
-PUT /api/1/delete/:id?token=seu_token
+POST /api/1/delete/:id?token=seu_token
 ```
 ```json
 {
@@ -129,7 +129,7 @@ PUT /api/1/delete/:id?token=seu_token
 
 ### Apagar usuários em massa
 ```
-PUT /api/1/delete-many/:ids?token=seu_token
+POST /api/1/delete-many/:ids?token=seu_token
 ```
 ```json
 {

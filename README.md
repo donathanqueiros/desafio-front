@@ -14,6 +14,8 @@ Nosso desafio consiste em implementar uma aplicação client-side que consulte a
 
 O usuário deverá ser capaz de realizar uma busca consumindo os dados da API como mostrado nos layouts fornecidos.
 
+Caso enfrente problemas de CORS, utilize a extensão [CORS do Chrome](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=pt-BR)
+
 ### API
 ```url
 https://desafio.eadplataforma.com/api/1?token=seu_token
@@ -106,7 +108,7 @@ GET /api/1/users?offset=10&token=seu_token = Indica o início da leitura à part
 
 ### Edição do usuário
 ```
-POST /api/1/update/:id?token=seu_token
+POST /api/1/update/:id
 ```
 ```json
 {
@@ -119,7 +121,7 @@ POST /api/1/update/:id?token=seu_token
 
 ### Apagar um usuário
 ```
-POST /api/1/delete/:id?token=seu_token
+POST /api/1/delete/:id
 ```
 ```json
 {
@@ -129,7 +131,7 @@ POST /api/1/delete/:id?token=seu_token
 
 ### Apagar usuários em massa
 ```
-POST /api/1/delete-many/:ids?token=seu_token
+POST /api/1/delete-many/:ids
 ```
 ```json
 {

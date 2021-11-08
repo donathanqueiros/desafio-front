@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+.card {
+  @include flex($justify: center, $align: start, $direction: column);
+  width: 220px;
+  height: 80px;
+  padding-left: 16px;
+  border-radius: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-width: 0;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+
+  &:last-of-type {
+    margin-right: 0px;
+  }
+
+  span:first-of-type {
+    font-size: 16px;
+    color: $textColor;
+    font-weight: bold;
+  }
+  span:last-of-type {
+    font-size: 24px;
+    color: $primary !important;
+    font-weight: 700;
+  }
+}

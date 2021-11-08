@@ -1,0 +1,40 @@
+@import "./variables";
+
+.ant-modal-content {
+  border-radius: 4px;
+  .ant-modal-close {
+    color: $background;
+    .ant-modal-close-x {
+      @include flex();
+    }
+  }
+
+  .ant-modal-body {
+    .ant-form-item-label {
+      font-weight: bold;
+    }
+    .ant-form-item-control-input-content {
+      input {
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .ant-modal-header {
+    border-radius: 4px 4px 0 0;
+    background-color: $primary;
+    color: $background !important;
+
+    .ant-modal-title {
+      color: $background;
+    }
+  }
+
+  .ant-modal-footer {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 80px;
+  }
+}

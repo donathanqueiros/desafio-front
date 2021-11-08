@@ -1,0 +1,142 @@
+@import "./variables.scss";
+
+.ant-table-tbody {
+  tr {
+    height: 50px;
+  }
+}
+
+.ant-table-row {
+  color: $textColor;
+  font-weight: 600;
+  font-size: 16px;
+
+  &:hover {
+    cursor: pointer;
+    color: $primary;
+  }
+}
+
+.ant-table-row-level-0 {
+  background-color: white !important;
+}
+
+.ant-table-row-selected {
+  background-color: white !important;
+}
+.ant-table-tbody > tr.ant-table-row-selected > td {
+  background-color: white;
+}
+
+.ant-table-tbody > tr.ant-table-row:hover > td {
+  background-color: $secundary;
+  span {
+    color: $primary !important;
+  }
+
+  button {
+    span {
+      color: $background !important;
+    }
+  }
+}
+
+.ant-pagination-prev {
+  width: 110px;
+  height: 30px;
+  button {
+    border-radius: 4px !important;
+    color: $background !important;
+    font-weight: bold;
+    font-size: 12px !important;
+    background-color: $primary !important;
+
+    span {
+      @include flex();
+    }
+  }
+}
+
+.ant-pagination-item {
+  font-weight: bold;
+  height: 30px;
+  color: $textColor;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  a {
+    @include flex();
+    text-align: center;
+  }
+}
+
+.ant-pagination-item-active {
+  color: $primary;
+}
+
+.ant-pagination-next {
+  width: 110px;
+  height: 30px;
+  button {
+    border-radius: 4px !important;
+    color: $background !important;
+    font-weight: bold;
+    font-size: 12px !important;
+    background-color: $primary !important;
+
+    span {
+      @include flex();
+    }
+  }
+}
+.ant-pagination-disabled {
+  button {
+    color: $primary !important;
+    background-color: $secundary !important;
+  }
+}
+
+.ant-checkbox {
+  border-radius: 8px;
+
+  .ant-checkbox-inner::after {
+    background-color: $primary;
+  }
+
+  .ant-checkbox-inner {
+    border-color: $primary;
+    background-color: $secundary;
+  }
+
+  .ant-checkbox-input {
+    border-color: $primary;
+  }
+}
+
+.ant-checkbox-checked {
+  border-radius: 8px;
+  .ant-checkbox-inner {
+    background-color: $primary !important;
+  }
+}
+
+.column-delete-row {
+  @include flex($justify: end);
+  button {
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    background-color: $danger;
+    color: $background !important;
+
+    &:hover {
+      background-color: $danger;
+      color: $background !important;
+    }
+
+    &:focus {
+      background-color: $danger;
+      color: $background !important;
+    }
+  }
+}
